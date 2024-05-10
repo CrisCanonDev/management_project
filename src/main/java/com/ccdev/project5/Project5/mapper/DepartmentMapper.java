@@ -1,6 +1,6 @@
 package com.ccdev.project5.Project5.mapper;
 
-import com.ccdev.project5.Project5.Entities.Department;
+import com.ccdev.project5.Project5.model.Department;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

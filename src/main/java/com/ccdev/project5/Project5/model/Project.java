@@ -1,14 +1,16 @@
-package com.ccdev.project5.Project5.Entities;
+package com.ccdev.project5.Project5.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
+import java.util.List;
+
 @NoArgsConstructor
 @AllArgsConstructor
-public class Department {
+@Data
+public class Project {
     private int id;
     private String name;
-    private String location;
+    List<Employee> employees;
 }

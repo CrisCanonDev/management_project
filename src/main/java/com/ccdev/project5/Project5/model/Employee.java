@@ -1,4 +1,4 @@
-package com.ccdev.project5.Project5.Entities;
+package com.ccdev.project5.Project5.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
