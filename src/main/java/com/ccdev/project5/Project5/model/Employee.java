@@ -12,7 +12,8 @@ import java.util.List;
 public class Employee {
     private int id;
     private String name;
-    private float decimal;
+    private String surname;
+    private float salary;
     private Department department;
     public List<Project> projects;
 }

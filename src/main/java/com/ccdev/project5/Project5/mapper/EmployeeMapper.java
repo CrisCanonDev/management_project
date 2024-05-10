@@ -2,9 +2,11 @@ package com.ccdev.project5.Project5.mapper;
 
 import com.ccdev.project5.Project5.model.Employee;
 import org.apache.ibatis.annotations.*;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
+@Mapper
 public interface EmployeeMapper {
 
     @Insert("INSERT INTO employees (name, surname, salary, department_id)" +
@@ -18,6 +20,9 @@ public interface EmployeeMapper {
             keyColumn = "id",
             keyProperty = "id")
     void insertEmployee(Employee employee);
+
+    @Select("SELECT * FROM employees")
+    List<Employee> getEmployees();
 
     @Select("SELECT * FROM employees WHERE id = #{id};")
     Employee getEmployeeById(int id);

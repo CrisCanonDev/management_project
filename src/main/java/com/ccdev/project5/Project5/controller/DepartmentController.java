@@ -38,7 +38,7 @@ public class DepartmentController {
     }
 
     @GetMapping("/{id}")
-    public String showDeparmentInformation(@PathVariable int id, Model model) {
+    public String showDepartmentInformation(@PathVariable int id, Model model) {
         Department department = departmentMapper.getDepartmentById(id);
         model.addAttribute("department", department);
         return "departments/departmentInformation";
